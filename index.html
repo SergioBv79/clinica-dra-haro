@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio | Clínica Otorrino Dra. Haro</title>
+  <meta name="description" content="Clínica Otorrinolaringológica en El Puerto de Santa María (Cádiz). Especialistas en audición, voz y equilibrio con tecnología avanzada y atención personalizada. Pide cita con la Dra. Haro.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Clínica Otorrino Dra. Haro">
+  <meta name="keywords" content="otorrinolaringología, clínica otorrino, Dra. Haro, El Puerto de Santa María, audición, voz, vértigo, tinnitus, apnea, foniatría, otorrino infantil">
+  <link rel="canonical" href="https://www.draharo.es/index.html">
+
+  <!-- Favicons y manifest -->
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="128x128" href="img/favicon/favicon-128.png">
+  <link rel="icon" type="image/png" sizes="196x196" href="img/favicon/favicon-196x196.png">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Clínica Otorrino Dra. Haro">
+  <meta property="og:description" content="Especialistas en otorrinolaringología en El Puerto de Santa María (Cádiz). Cuidamos tu audición, voz y equilibrio con tecnología avanzada.">
+  <meta property="og:image" content="https://www.draharo.es/img/ogimage.jpg">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://www.draharo.es">
+  <meta property="og:type" content="website">
+
+  <!-- Estilos y fuentes -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <style>
+  body { scroll-behavior: smooth; }
+
+  .hero-full {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+  }
+
+  .hero-full img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 4px #000;
+    padding: 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .hero-text p {
+    font-size: 1.25rem;
+  }
+
+  .servicio-img { height: 200px; object-fit: cover; }
+
+  .scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 999;
+  }
+
+  footer {
+    background-color: #f8f9fa;
+    padding: 2rem 0;
+  }
+
+  .navbar-brand img {
+    height: 100px;
+    margin-right: 12px;
+  }
+
+  .navbar-brand span {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #000;
+}
+
+
+  .navbar-nav .nav-link {
+    font-weight: 600;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+
+  .navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #f4b400; /* dorado tipo Doctoralia */
+    transition: width 0.3s ease;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #d49100; /* dorado oscuro */
+  }
+
+  .navbar-nav .nav-link:hover::after {
+    width: 100%;
+  }
+
+  .btn-warning {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .btn-warning:hover {
+    transform: scale(1.1);
+  }
+  .cookie-settings-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px; /* cambia a 'right' si lo prefieres */
+  background-color: #f4b400;
+  color: #000;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  z-index: 9999;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.cookie-settings-btn:hover {
+  transform: scale(1.05);
+  background-color: #d49100;
+  color: #fff;
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- HEADER -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top border-bottom shadow-sm py-3">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="img/logo_dra_haro.png" alt="Logotipo Clínica Dra. Haro">
+      <span>Clínica Dra. Haro</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-center gap-3">
+        <li class="nav-item"><a class="nav-link" href="sobre-nosotros.html">Sobre nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        <li class="nav-item">
+          <a class="btn btn-warning fw-semibold d-flex align-items-center gap-2 px-3" 
+             href="https://www.doctoralia.es/clinicas/clinica-otorrino-dra-haro" target="_blank">
+            <i class="fas fa-calendar-check"></i> Pide una cita
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO a pantalla completa -->
+<section class="hero-full">
+  <img src="img/Hero_clinica_Dra_Haro.png" alt="Recepción de la Clínica Dra. Haro en El Puerto de Santa María">
+  <div class="hero-text">
+    <p class="lead">Cuidamos de lo que te conecta con el mundo</p>
+    <h1 class="display-4 fw-bold">Tu audición, tu voz, tu equilibrio</h1>
+    <p class="fs-5">Porque escuchar, hablar y sentir bien... cambia tu vida</p>
+  </div>
+</section>
+
+<!-- INICIO BREVE CONTENIDO -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row text-center mb-5">
+      <h2 class="fw-bold">Bienvenidos a nuestra clínica</h2>
+      <p class="text-muted">Especialistas en Otorrinolaringología. Cuidamos de tu audición, voz y equilibrio con la mejor tecnología y atención personalizada.</p>
+    </div>
+    <div class="row g-4 text-center">
+      <div class="col-md-4">
+        <img src="img/sobre_nosotros.JPG" class="img-fluid rounded shadow-sm mb-3" alt="Equipo médico de la clínica">
+        <h5 class="fw-semibold">Sobre nosotros</h5>
+        <p class="text-muted">Conoce quiénes somos, nuestra misión, valores y trayectoria.</p>
+        <a href="sobre-nosotros.html" class="btn btn-outline-primary btn-sm">Leer más</a>
+      </div>
+      <div class="col-md-4">
+        <img src="img/servicios.jpg" class="img-fluid rounded shadow-sm mb-3" alt="Paciente en consulta otorrino">
+        <h5 class="fw-semibold">Servicios</h5>
+        <p class="text-muted">Atención integral en audición, voz, vértigo, ronquidos, infancia y más.</p>
+        <a href="servicios.html" class="btn btn-outline-primary btn-sm">Ver servicios</a>
+      </div>
+      <div class="col-md-4">
+        <img src="img/Contato.jpg" class="img-fluid rounded shadow-sm mb-3" alt="Fachada de la clínica">
+        <h5 class="fw-semibold">Contacto</h5>
+        <p class="text-muted">Reserva tu cita, consúltanos o visítanos en El Puerto de Santa María.</p>
+        <a href="contacto.html" class="btn btn-outline-primary btn-sm">Contactar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="text-center">
+  <div class="container">
+    <p>Síguenos en:</p>
+    <a href="#"><i class="fab fa-facebook fa-lg me-2"></i></a>
+    <a href="#"><i class="fab fa-instagram fa-lg me-2"></i></a>
+    <a href="#"><i class="fab fa-twitter fa-lg me-2"></i></a>
+    <p class="mt-3">
+      <a href="aviso_legal.html">Aviso legal</a> |
+      <a href="politica_privacidad.html">Política de privacidad</a> |
+      <a href="politica_cookies.html">Política de cookies</a>
+    </p>
+    <p>&copy; 2025 Clínica Otorrino Dra. Haro</p>
+  </div>
+</footer>
+
+<button id="cookie-settings-btn" class="cookie-settings-btn">
+  <i class="fas fa-cookie-bite"></i> Preferencias de cookies
+</button>
+
+<!-- BOTÓN SCROLL TOP -->
+<button class="btn btn-dark scroll-top" id="scrollTop"><i class="fas fa-arrow-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const scrollTopBtn = document.getElementById('scrollTop');
+  window.addEventListener('scroll', () => {
+    scrollTopBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+  });
+  scrollTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+<script>
+  document.getElementById("cookie-settings-btn").addEventListener("click", function () {
+    window.location.href = "politica_cookies.html#panel-config";
+  });
+</script>
+
+
+<script src="js/cookies-config.js"></script>
+<script src="js/cookies-banner.js"></script>
+
+
+</body>
+</html>
