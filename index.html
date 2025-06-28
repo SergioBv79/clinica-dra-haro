@@ -176,7 +176,8 @@
       <img src="img/logo_dra_haro.png" alt="Logotipo Clínica Dra. Haro">
       <span>Clínica Dra. Haro</span>
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+   <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -226,7 +227,7 @@
         <a href="servicios.html" class="btn btn-outline-primary btn-sm">Ver servicios</a>
       </div>
       <div class="col-md-4">
-        <img src="img/Contato.jpg" class="img-fluid rounded shadow-sm mb-3" alt="Fachada de la clínica">
+        <img src="img/contacto.JPG" class="img-fluid rounded shadow-sm mb-3" alt="Fachada de la clínica">
         <h5 class="fw-semibold">Contacto</h5>
         <p class="text-muted">Reserva tu cita, consúltanos o visítanos en El Puerto de Santa María.</p>
         <a href="contacto.html" class="btn btn-outline-primary btn-sm">Contactar</a>
@@ -252,8 +253,8 @@
   </div>
 </footer>
 
-<button id="cookie-settings-btn" class="cookie-settings-btn">
-  <i class="fas fa-cookie-bite"></i> Preferencias de cookies
+<button id="cookie-settings-btn" class="cookie-settings-btn" aria-label="Preferencias de cookies">
+  <i class="fas fa-cookie-bite"></i>
 </button>
 
 <!-- BOTÓN SCROLL TOP -->
@@ -264,7 +265,7 @@
   const scrollTopBtn = document.getElementById('scrollTop');
   window.addEventListener('scroll', () => {
     scrollTopBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
-  });
+  });F
   scrollTopBtn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
