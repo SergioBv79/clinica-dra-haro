@@ -98,6 +98,7 @@
     padding: 2rem 0;
   }
 
+  
   .navbar-brand img {
     height: 100px;
     margin-right: 12px;
@@ -166,13 +167,47 @@
   color: #fff;
 }
 
+/* Fondo negro animado con brillo metálico */
+.navbar {
+  background: linear-gradient(
+    270deg,
+    #000000,
+    #2e2e2e,
+    #4a4a4a,
+    #2e2e2e,
+    #000000
+  );
+  background-size: 400% 400%;
+  animation: brillo-metal 8s ease-in-out infinite alternate;
+  transition: background 0.3s ease;
+}
+
+@keyframes brillo-metal {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+
+/* Menú legible sobre fondo oscuro */
+.navbar .nav-link {
+  color: #fff !important;
+}
+
+.navbar .nav-link:hover {
+  color: #f4b400 !important;
+}
+
 </style>
 
 </head>
 <body>
 
-<!-- HEADER -->
-<nav class="navbar navbar-expand-lg sticky-top shadow-sm py-3" style="background-color: #111;">
+<!-- HEADER con fondo animado -->
+<nav class="navbar navbar-expand-lg sticky-top shadow-sm py-3">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
       <img src="img/logo_dra_haro.png" alt="Logotipo Clínica Dra. Haro" style="height: 60px; width: auto;">
@@ -201,6 +236,7 @@
     </div>
   </div>
 </nav>
+
 
 <!-- HERO a pantalla completa -->
 <section class="hero-full">
