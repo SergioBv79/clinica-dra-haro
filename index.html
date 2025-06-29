@@ -39,7 +39,9 @@
   <!-- Estilos y fuentes -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css" >
+
 
   <style>
   body { scroll-behavior: smooth; }
@@ -170,21 +172,25 @@
 <body>
 
 <!-- HEADER -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top border-bottom shadow-sm py-3">
+<nav class="navbar navbar-expand-lg sticky-top shadow-sm py-3" style="background-color: #111;">
   <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <img src="img/logo_dra_haro.png" alt="Logotipo Clínica Dra. Haro">
-      <span>Clínica Dra. Haro</span>
+    <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+      <img src="img/logo_dra_haro.png" alt="Logotipo Clínica Dra. Haro" style="height: 60px; width: auto;">
+      <div style="font-family: 'Montserrat', sans-serif;">
+        <h1 class="mb-0" style="font-size: 1.5rem; font-weight: 600; color: white;">Clínica Dra. Haro</h1>
+        <span style="font-size: 0.9rem; font-weight: 300; color: #ccc;">Otorrinolaringóloga</span>
+      </div>
     </a>
-   <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
 
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto align-items-center gap-3">
-        <li class="nav-item"><a class="nav-link" href="sobre-nosotros.html">Sobre nosotros</a></li>
-        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link text-white fw-semibold" href="sobre-nosotros.html">Sobre nosotros</a></li>
+        <li class="nav-item"><a class="nav-link text-white fw-semibold" href="servicios.html">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link text-white fw-semibold" href="contacto.html">Contacto</a></li>
         <li class="nav-item">
           <a class="btn btn-warning fw-semibold d-flex align-items-center gap-2 px-3" 
              href="https://www.doctoralia.es/clinicas/clinica-otorrino-dra-haro" target="_blank">
