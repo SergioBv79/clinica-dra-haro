@@ -52,3 +52,49 @@ h1 {
   color: #fff;
 }
 
+
+
+footer {
+  background: linear-gradient(
+    270deg,
+    #000000,
+    #2e2e2e,
+    #4a4a4a,
+    #2e2e2e,
+    #000000
+  );
+  background-size: 400% 400%;
+  animation: brillo-metal-footer 10s ease-in-out infinite alternate;
+  color: #fff;
+  padding: 2rem 0;
+  font-size: 0.95rem;
+}
+
+footer a {
+  color: #f4b400;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+footer i {
+  color: #f4b400;
+  transition: transform 0.3s ease;
+}
+
+footer i:hover {
+  transform: scale(1.2);
+  color: #fff;
+}
+
+@keyframes brillo-metal-footer {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}

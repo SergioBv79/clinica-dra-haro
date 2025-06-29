@@ -138,6 +138,37 @@
 .navbar .nav-link:hover {
   color: #f4b400 !important;
 }
+/* VISIBILIDAD DEL ICONO HAMBURGUESA SOBRE FONDO OSCURO */
+.navbar-toggler {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,0.9%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* FONDO Y ESTILO DEL MENÚ COLAPSADO EN MÓVILES */
+.navbar-collapse {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+/* VISIBILIDAD DEL ICONO HAMBURGUESA SOBRE FONDO OSCURO */
+.navbar-toggler {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,0.9%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* FONDO Y ESTILO DEL MENÚ COLAPSADO EN MÓVILES */
+.navbar-collapse {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+}
   </style>
 </head>
 <body>
@@ -235,6 +266,19 @@
 <script src="js/cookies-config.js"></script>
 <script src="js/cookies-banner.js"></script>
 
+<script>
+  // Cierra el menú móvil al hacer clic en un enlace
+  const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+  const navCollapse = document.querySelector('.navbar-collapse');
+
+  navLinks.forEach(link =>
+    link.addEventListener('click', () => {
+      if (navCollapse.classList.contains('show')) {
+        new bootstrap.Collapse(navCollapse).toggle();
+      }
+    })
+  );
+</script>
 
 </body>
 </html>

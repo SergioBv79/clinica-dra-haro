@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inicio | Clínica Otorrino Dra. Haro</title>
+  <title>Clínica de Otorrinolaringología en El Puerto de Santa María | Dra. Haro</title>
+
   <meta name="description" content="Clínica Otorrinolaringológica en El Puerto de Santa María (Cádiz). Especialistas en audición, voz y equilibrio con tecnología avanzada y atención personalizada. Pide cita con la Dra. Haro.">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Clínica Otorrino Dra. Haro">
-  <meta name="keywords" content="otorrinolaringología, clínica otorrino, Dra. Haro, El Puerto de Santa María, audición, voz, vértigo, tinnitus, apnea, foniatría, otorrino infantil">
+  <meta name="keywords" content="otorrinolaringología, clínica otorrino, otorrino, clínica, Dra. Haro, El Puerto de Santa María, Caadíz, audición, voz, vértigo, tinnitus, apnea, foniatría, otorrino infantil">
   <link rel="canonical" href="https://www.draharo.es/index.html">
 
   <!-- Favicons y manifest -->
@@ -46,14 +47,36 @@
   <style>
   body { scroll-behavior: smooth; }
 
+.hero-full {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+}
+
+@media (max-width: 768px) {
   .hero-full {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
+    height: 60vh;
   }
+
+  .hero-text h1 {
+    font-size: 1.2rem !important;
+    line-height: 1.3;
+  }
+
+  .hero-text p {
+    font-size: 0.85rem !important;
+    line-height: 1.4;
+  }
+
+  .hero-text {
+    padding: 0.5rem;
+  }
+}
+
+
 
   .hero-full img {
     width: 100%;
@@ -200,12 +223,127 @@
 .navbar .nav-link:hover {
   color: #f4b400 !important;
 }
+/* VISIBILIDAD DEL ICONO HAMBURGUESA SOBRE FONDO OSCURO */
+.navbar-toggler {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,0.9%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* FONDO Y ESTILO DEL MENÚ COLAPSADO EN MÓVILES */
+.navbar-collapse {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+.tarjeta-clinica {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-clinica:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.tarjeta-clinica img {
+  transition: transform 0.3s ease;
+  border-radius: 12px;
+}
+
+.tarjeta-clinica:hover img {
+  transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+  .tarjeta-clinica {
+    padding: 1rem;
+  }
+
+  .tarjeta-clinica h5 {
+    font-size: 1.1rem;
+  }
+
+  .tarjeta-clinica p {
+    font-size: 0.95rem;
+  }
+
+  .tarjeta-clinica a.btn {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+.seccion-glass {
+  background: linear-gradient(135deg, #e8f0f9, #ffffff);
+  background-size: cover;
+}
+
+.tarjeta-glass {
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 1rem;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+}
+
+.tarjeta-glass:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.15);
+}
+
+</style>
+
+
+<style>
+.seccion-glass {
+  background: linear-gradient(135deg, #cce5f7, #ffffff);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.tarjeta-clinica {
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(6px);
+  background: rgba(255, 255, 255, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-clinica:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.fade-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-in-out;
+}
+
+.fade-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .tarjeta-clinica {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  }
+}
 
 </style>
 
 </head>
-<body>
 
+<body>
 <!-- HEADER con fondo animado -->
 <nav class="navbar navbar-expand-lg sticky-top shadow-sm py-3">
   <div class="container">
@@ -237,6 +375,9 @@
   </div>
 </nav>
 
+<main>
+  <main>
+  <h1 class="visually-hidden">Clínica de Otorrinolaringología en El Puerto de Santa María - Dra. Haro</h1>
 
 <!-- HERO a pantalla completa -->
 <section class="hero-full">
@@ -248,35 +389,46 @@
   </div>
 </section>
 
+
 <!-- INICIO BREVE CONTENIDO -->
-<section class="py-5 bg-light">
+<section class="py-5 seccion-glass" id="bienvenida">
   <div class="container">
-    <div class="row text-center mb-5">
+    <div class="row text-center mb-5 fade-on-scroll">
       <h2 class="fw-bold">Bienvenidos a nuestra clínica</h2>
-      <p class="text-muted">Especialistas en Otorrinolaringología. Cuidamos de tu audición, voz y equilibrio con la mejor tecnología y atención personalizada.</p>
+      <p class="text-muted">
+        Especialistas en Otorrinolaringología. Cuidamos de tu audición, voz y equilibrio con la mejor tecnología y atención personalizada.
+      </p>
     </div>
-    <div class="row g-4 text-center">
+    <div class="row g-4 text-center fade-on-scroll">
       <div class="col-md-4">
-        <img src="img/sobre_nosotros.JPG" class="img-fluid rounded shadow-sm mb-3" alt="Equipo médico de la clínica">
-        <h5 class="fw-semibold">Sobre nosotros</h5>
-        <p class="text-muted">Conoce quiénes somos, nuestra misión, valores y trayectoria.</p>
-        <a href="sobre-nosotros.html" class="btn btn-outline-primary btn-sm">Leer más</a>
+        <div class="tarjeta-clinica p-3 h-100">
+          <img src="img/sobre_nosotros.JPG" class="img-fluid rounded shadow-sm mb-3" alt="Equipo médico de la clínica">
+          <h5 class="fw-semibold">Sobre nosotros</h5>
+          <p class="text-muted">Conoce quiénes somos, nuestra misión, valores y trayectoria.</p>
+          <a href="sobre-nosotros.html" class="btn btn-outline-primary btn-sm">Leer más</a>
+        </div>
       </div>
       <div class="col-md-4">
-        <img src="img/Servicios.JPG" class="img-fluid rounded shadow-sm mb-3" alt="Paciente en consulta otorrino">
-        <h5 class="fw-semibold">Servicios</h5>
-        <p class="text-muted">Atención integral en audición, voz, vértigo, ronquidos, infancia y más.</p>
-        <a href="servicios.html" class="btn btn-outline-primary btn-sm">Ver servicios</a>
+        <div class="tarjeta-clinica p-3 h-100">
+          <img src="img/Servicios.JPG" class="img-fluid rounded shadow-sm mb-3" alt="Paciente en consulta otorrino">
+          <h5 class="fw-semibold">Servicios</h5>
+          <p class="text-muted">Atención integral en audición, voz, vértigo, ronquidos, infancia y más.</p>
+          <a href="servicios.html" class="btn btn-outline-primary btn-sm">Ver servicios</a>
+        </div>
       </div>
       <div class="col-md-4">
-        <img src="img/Contato.jpg" class="img-fluid rounded shadow-sm mb-3" alt="Fachada de la clínica">
-        <h5 class="fw-semibold">Contacto</h5>
-        <p class="text-muted">Reserva tu cita, consúltanos o visítanos en El Puerto de Santa María.</p>
-        <a href="contacto.html" class="btn btn-outline-primary btn-sm">Contactar</a>
+        <div class="tarjeta-clinica p-3 h-100">
+          <img src="img/Contato.jpg" class="img-fluid rounded shadow-sm mb-3" alt="Fachada de la clínica">
+          <h5 class="fw-semibold">Contacto</h5>
+          <p class="text-muted">Reserva tu cita, consúltanos o visítanos en El Puerto de Santa María.</p>
+          <a href="contacto.html" class="btn btn-outline-primary btn-sm">Contactar</a>
+        </div>
       </div>
     </div>
   </div>
 </section>
+</main>
+
 
 
 <!-- FOOTER -->
@@ -322,6 +474,40 @@
 <script src="js/cookies-config.js"></script>
 <script src="js/cookies-banner.js"></script>
 
+<script>
+  // Cierra el menú móvil al hacer clic en un enlace
+  const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+  const navCollapse = document.querySelector('.navbar-collapse');
+
+  navLinks.forEach(link =>
+    link.addEventListener('click', () => {
+      if (navCollapse.classList.contains('show')) {
+        new bootstrap.Collapse(navCollapse).toggle();
+      }
+    })
+  );
+</script>
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const targets = document.querySelectorAll(".fade-on-scroll");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    targets.forEach(t => observer.observe(t));
+  });
+</script>
 
 </body>
 </html>
